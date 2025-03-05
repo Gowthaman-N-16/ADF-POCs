@@ -1,0 +1,24 @@
+{
+	"name": "LS_Key_Vault",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "sqldbpoc02.database.windows.net",
+			"database": "sqldbpoc01",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "poc02",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVaultSamplepoc01",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "password"
+			}
+		}
+	}
+}

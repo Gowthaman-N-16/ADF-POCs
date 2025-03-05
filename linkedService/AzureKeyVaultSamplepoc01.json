@@ -1,0 +1,11 @@
+{
+	"name": "AzureKeyVaultSamplepoc01",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://SampleKeyvault01.vault.azure.net/"
+		}
+	}
+}

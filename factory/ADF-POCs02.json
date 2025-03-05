@@ -1,0 +1,9 @@
+{
+	"name": "ADF-POCs02",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "32995e87-c30e-43c7-9996-9dc08c51b3ef",
+		"tenantId": "09eb0882-9ddf-4200-9033-0a51a5bba368"
+	}
+}
